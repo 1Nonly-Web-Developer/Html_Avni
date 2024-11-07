@@ -1,0 +1,131 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* General section styling */
+section {
+    margin-bottom: 40px;
+}
+
+/* About section */
+section h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Profile section styling */
+section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-of-type(2) img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Social section */
+section:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section:nth-of-type(3) a {
+    font-size: 2em;
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section:nth-of-type(3) a:hover {
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    /* Adjust font sizes for larger screens */
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p,
+    section p {
+        font-size: 1.2em;
+    }
+
+    section:nth-of-type(2) img {
+        height: 500px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    section:nth-of-type(2) img {
+        height: 300px;
+        width: 250px;
+    }
+
+    header h1,
+    header p,
+    section p {
+        font-size: 1em;
+    }
+
+    /* Adjust social icon size */
+    section:nth-of-type(3) a {
+        font-size: 1.8em;
+    }
+}
